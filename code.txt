@@ -1,0 +1,138 @@
+#define left A2
+#define right A1
+#define top A0
+#define bot A3
+
+#include Keyboard.h
+int dar;
+int dal;
+int dr;
+int dl;
+int ddr=1023;
+int ddl=1023;
+int d3=3;
+int d5=5;
+int d7=7;
+int d9=9;
+boolean flag=1;
+boolean ta=0;
+boolean pi=0;
+int i;
+
+
+void setup()
+{
+Keyboard.begin();
+Serial.begin(9600);
+
+pinMode(left,INPUT);
+pinMode(right,INPUT);
+
+pinMode(d3,OUTPUT);
+pinMode(d5,OUTPUT);
+pinMode(d7,OUTPUT);
+pinMode(d9,INPUT);
+}
+
+void loop() 
+{ 
+if (digitalRead(d9)==1 && flag==0  ) {
+  flag=1;
+  pi=1;
+  digitalWrite(d5, LOW);
+  dr = analogRead(right); 
+  dl = analogRead(left); 
+  Serial.print(L );
+  Serial.print(dl);
+  Serial.print(    R );
+  Serial.println(dr);
+  ddr=dr+120;   120
+  ddl=dl+120;    120
+ 
+}
+if(flag==1 && digitalRead(d9)==0 ) {
+flag=0;
+Keyboard.print(d);
+digitalWrite(d5,HIGH) ;
+}
+
+if (digitalRead(d9)==0 && flag==0  && pi==1) {
+
+  
+  for (i=0; i = 901; i++){  1001     
+ 
+  dr = analogRead(right);
+   dl = analogRead(left);
+
+if(ddrdr) {
+     Keyboard.print(a);
+     delay(40);
+     Keyboard.print(a);
+     digitalWrite(d3,HIGH);
+     ta=1;
+     i=0;
+     delay(140);  90 
+         }
+if(ddrdl) {
+      Keyboard.print(d);
+      delay(40);
+      Keyboard.print(d);
+      digitalWrite(d7,HIGH);
+      ta=0;
+      i=0;
+      delay(140);  90 
+    }
+ if(ta==0 && i900) {  1000            
+ Keyboard.print(d);                 
+ }                                      
+  if(ta==1 && i900) {             
+  Keyboard.print(a);               
+ }                                       
+digitalWrite(d3,LOW);
+digitalWrite(d7,LOW);
+}          
+   }
+}
+ 
+   22222222222222222222222222222222222 RIGHT
+   n2=ss2+50;
+   ss2 = analogRead(right); 
+
+   Serial.println(ss2);
+   if (ss2n2 ) {
+       
+   Serial.print(ss2);
+   Serial.print(ss2);
+   Serial.println(  Right);
+   Keyboard.print(a);
+   delay (200);  
+   
+  }
+  delay(200);
+  
+     
+     }
+
+
+  4444444444444444444444444444444444444 LEFT
+
+       if (ss4  ==0 && lt==i) {
+
+        lt=0;
+ 
+      Serial.print(ss4);
+      Serial.print(ss4);
+      Serial.print(  Left);
+  Keyboard.print(d);
+    delay(10);
+     
+      
+  }
+    if (ss4 ==1 && lt==0) {
+ 
+    lt=1;
+       delay(10);
+     }
+
+
+ 
